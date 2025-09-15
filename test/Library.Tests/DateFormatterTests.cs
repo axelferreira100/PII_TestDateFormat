@@ -25,7 +25,7 @@ public class DateFormatterTests
     [Test]
     public void ChangeFormat_InvalidInputDate_ReturnsEmpty()
     {
-        string inputDate = "10-10-2009", expectedResponse = "", response = _dateFormatter.ChangeFormat(inputDate);
+        string inputDate = "1010/2009", expectedResponse = "", response = _dateFormatter.ChangeFormat(inputDate);
         
         Assert.AreEqual(expectedResponse, response);
     }

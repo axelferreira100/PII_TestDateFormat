@@ -17,6 +17,10 @@
         /// <returns>La fecha convertida al formato "yyyy-mm-dd".</returns>
         public string ChangeFormat(string date)
         {
+            if (date == "" || date.Length != 10 || date[2] != '/' || date[5] != '/')
+            {
+                return "";
+            }
             return date.Substring(6) + "-" + date.Substring(3, 2) + "-" + date.Substring(0, 2);
         }
     }
