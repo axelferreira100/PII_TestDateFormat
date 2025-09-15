@@ -8,8 +8,20 @@ public class DateFormatterTests
     }
 
     [Test]
-    public void Test1()
+    public void ChangeFormat_ValidInputDate_ReturnsConvertedDate()
     {
         Assert.Pass();
+    }
+
+    [Test]
+    public void ChangeFormat_InvalidInputDate_ReturnsEmpty()
+    {
+        
+    }
+
+    [Test]
+    public void ChangeFormat_EmptyInput_ReturnsEmpty()
+    {
+        
     }
 }
